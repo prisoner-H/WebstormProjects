@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>四季交替</title>
+
+    <link rel="stylesheet" href="css/page.css">
+
+ <script>
+     function audioAutoPlay(id){
+         const audio = document.getElementById(id);
+         audio.play();
+         document.addEventListener("WeixinJSBridgeReady",function (){
+             audio.play();
+         },false);
+         document.addEventListener("YixinJSBridgeReady",function (){
+             audio.play();
+         },false);
+     }
+
+ </script>
+
+</head>
+<body onload="audioAutoPlay('bjyy');">
+
+<audio id="bjyy" src="WAV/bjyy.wav" preload="auto" autoplay="autoplay" ></audio>
+
+<page id="C">春</page>
+<page id="X">夏</page>
+<page id="Q">秋</page>
+<page id="D">
+    冬
+<span id="Z">贞下起元</span></page>
+
+</body>
+</html>

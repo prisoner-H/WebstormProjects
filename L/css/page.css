@@ -1,0 +1,82 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+page{
+    font-size: 200px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding-top: 30%;
+}
+#C{
+    background-color: green;
+    color: white;
+    animation: C 10s infinite;
+}
+#X{
+    background-color: red;
+    color: white;
+    animation: X 10s infinite;
+
+}
+#Q{
+    background-image: url("../jpg/a.jpg");
+    background-size: 100% 100%;
+    color: white;
+    animation: Q 10s infinite;
+
+}
+#D{
+    background-color: black;
+    color: white;
+    animation: D 10s infinite;
+}
+#Z{
+    font-size: 36px;
+    display: block;
+    animation: Z 10s infinite;
+}
+
+@keyframes C {
+    0%{opacity: 0}
+    25%{opacity:100}
+    50%{opacity:0}
+    75%{opacity:0 }
+    100%{opacity:0}
+}
+@keyframes X {
+    0%{opacity: 0}
+    25%{opacity: 0}
+    50%{opacity:100}
+    75%{opacity: 0}
+    100%{opacity: 0}
+}
+@keyframes Q {
+    0%{opacity: 0}
+    25%{opacity: 0}
+    50%{opacity: 0 }
+    75%{opacity: 100}
+    100%{opacity:0}
+}
+@keyframes D {
+    0%{opacity: 0}
+    25%{opacity: 0}
+    50%{opacity: 0}
+    75%{opacity: 0}
+    95%{opacity:100 }
+    100%{opacity:0 }
+}
+@keyframes Z {
+    0%{opacity: 0}
+    25%{opacity: 0}
+    50%{opacity: 0}
+    75%{opacity: 0}
+    80%{opacity: 0}
+    90%{opacity: 100}
+    100%{opacity:0 }
+
+}
